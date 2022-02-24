@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="listBoard">
+        <div class="priority high">HIGH</div>
+
+        <form class="new high task" id="parentHighForm" onsubmit="return false" >
+            <input type="checkbox">
+            <input class="input text" type="text" placeholder="Добавить важных дел">
+            <button class="button high plus" type="submit">+</button>
+        </form>
+
+        <form class="old high task" onsubmit="return false">
+            <input type="checkbox">
+            <input class="input text" type="text" value="dont worry">
+            <button class="button ex">x</button>
+        </form>
+
+        <div class="priority low">LOW</div>
+
+        <form class="new low task" id="parentLowForm" onsubmit="return false">
+            <input type="checkbox">
+            <input class="input text" type="text" placeholder="Добавить">
+            <button class="button low plus" type="submit">+</button>
+        </form>
+
+        <form class="old low task" onsubmit="return false">
+            <input type="checkbox">
+            <input class="input text" type="text" value="be happy">
+            <button class="button ex">x</button>
+        </form>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

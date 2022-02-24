@@ -1,0 +1,35 @@
+html {
+    background: lightgray;
+}
+
+
+.listBoard {
+
+   width: 476px;
+   height: 688px;
+   background: white;
+   margin: 20px auto;
+}
+
+.task {   
+    height: 30px;    
+    margin: 15px;
+    border: 1px solid lightgray;
+    border-radius: 5px; 
+
+}
+
+.input {
+    width: 350px;
+    border: none;
+}
+
+.button {
+    border: none;
+    background-color: white;
+    
+}
+.priority {
+   text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}

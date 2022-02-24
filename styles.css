@@ -12,6 +12,8 @@ html {
 }
 
 .task {   
+    display: flex;
+    justify-content: space-between;
     height: 30px;    
     margin: 15px;
     border: 1px solid lightgray;
@@ -20,7 +22,7 @@ html {
 }
 
 .input {
-    width: 350px;
+    width: 400px;
     border: none;
 }
 
@@ -31,5 +33,5 @@ html {
 }
 .priority {
    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+   font-family: Arial, Helvetica, sans-serif;
 }

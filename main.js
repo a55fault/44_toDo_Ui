@@ -20,15 +20,21 @@ for (let elem of exButtons) {
 
 
 function plusHighTask() {
-    let form = parentHighForm.cloneNode(true);
-    form.querySelector(".input.text").placeholder = parentHighForm.querySelector(".input.text").value;
-    parentHighForm.querySelector(".input.text").value = emptyString;
-    parentHighForm.querySelector(".input.text").placeholder = defaultValueHight;
-    form.querySelector(".button.high.plus").remove();
-    form.querySelector(".input.text").insertAdjacentHTML("afterend", `<button class="button ex" type="submit">x</button>`);
-    form.querySelector(".button.ex").addEventListener("click", deleteTask);
-    parentHighForm.after(form);
+    try {
+        //c=a+5;
+        let form = parentHighForm.cloneNode(true);
+        form.querySelector(".input.text").placeholder = parentHighForm.querySelector(".input.text").value;
+        parentHighForm.querySelector(".input.text").value = emptyString;
+        parentHighForm.querySelector(".input.text").placeholder = defaultValueHight;
+        form.querySelector(".button.high.plus").remove();
+        form.querySelector(".input.text").insertAdjacentHTML("afterend", `<button class="button ex" type="submit">x</button>`);
+        form.querySelector(".button.ex").addEventListener("click", deleteTask);
+        parentHighForm.after(form);
+    } catch (err) {
+        alert(err)
+    }
 }
+
 
 function plusLowTask() {
     let form = parentLowForm.cloneNode(true);
@@ -42,6 +48,6 @@ function plusLowTask() {
 }
 
 
-function deleteTask () {   
-this.parentNode.remove();
+function deleteTask() {
+    this.parentNode.remove();
 }
